@@ -1,4 +1,7 @@
-The proposed system automates monitoring and watering through integrated sensors and actuators. The soil moisture sensor continuously checks water levels, while the DHT11 tracks temperature and humidity. The Arduino analyses this data against predefined thresholds (e.g., soil moisture below 30% triggers watering). A water pump connected via a relay delivers precise amounts of water, creating a self-sustaining loop that maintains ideal conditions without human input. The LED is used an indicator for the pump during functionality.Functional Requirements
+The proposed system automates monitoring and watering through integrated sensors and actuators. The soil moisture sensor continuously checks water levels, while the DHT11 tracks temperature and humidity. The Arduino analyses this data against predefined thresholds (e.g., soil moisture below 30% triggers watering). A water pump connected via a relay delivers precise amounts of water, creating a self-sustaining loop that maintains ideal conditions without human input. The LED is used an indicator for the pump during functionality.
+
+
+Functional Requirements
 SENSOR MONITORING
 • Soil Moisture Monitoring: The system shall read soil moisture levels every 10 minutes using the water level sensor.
 • Environmental Monitoring: The system shall monitor temperature and humidity via the DHT11 sensor at the same interval.
@@ -12,6 +15,7 @@ POWER MANAGEMENT
 STATUS INDICATION
 • Status Indication: The system shall provide basic LED indicators to display operational status and alerts.
 PROJECT DESIGN
+
 
 Circuit Design:
 DHT11 Sensor
@@ -29,6 +33,9 @@ Relay Module
 • VCC: Connected to 5V power supply
 • GND: Connected to GND of Arduino Uno
 • IN1: Connected to Digital Pin 7 of Arduino Uno
+
+
+
 How The System Works
 The system operates in a continuous loop:
 The Arduino Uno powers on and initializes all connected sensors, including the DHT11 and water level sensor. It begins monitoring environmental conditions and soil moisture automatically.
